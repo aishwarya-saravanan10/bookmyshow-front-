@@ -1,6 +1,6 @@
 async function fetchMovies() {
     try {
-      const response = await fetch("https://learn-with-guvi-book-my-show-backend.onrender.com/movie/get-movies");
+      const response = await fetch("https://localhost:8000/movie/get-movies/$.{movieId}"); 
       const movies = await response.json();
       const movieCardsContainer = document.getElementById("movieCards");
       movieCardsContainer.innerHTML = "";
